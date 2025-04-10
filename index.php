@@ -6,7 +6,7 @@
     <title>Exemplo 02</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 01</h1>
+    <h1>PHP com POO - Exemplo 02</h1>
     <hr>
 
 <?php
@@ -31,7 +31,7 @@ $clienteB->email = "ozzy@email.com";
 
 <h3>Cliente A</h3>
 <div>
-    <?=$clienteA->exibirDados()?>
+    
 </div>
 
 <ul>
@@ -39,10 +39,6 @@ $clienteB->email = "ozzy@email.com";
     <li><b>E-mail:</b> <?=$clienteA->email?> </li>
 </ul>
 
-<h3>Cliente B</h3>
-<div>
-    <?=$clienteB->exibirDados()?>
-</div>
 
 <ul>
     <li><b>Idade:</b> <?=$clienteB->idade?> </li>
