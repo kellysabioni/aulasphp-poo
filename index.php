@@ -10,21 +10,19 @@
     <hr>
 
 <?php
-// Carregando/importando a classe
 require_once "src/Cliente.php";
 
-// Criando objeto/instância da classe
 $clienteA = new Cliente();
 $clienteB = new Cliente();
 
-// Atribuindo valores para os atributos
-$clienteA->nome = "Fulano da Silva";
-$clienteA->idade = 30;
-$clienteA->email = "fulano@gmail.com";
+// Iserindo valores através dos setters
+$clienteA->setNome("Fulano da Silva");
+$clienteA->setIdade(30);
+$clienteA->setEmail("fulano@gmail.com");
 
-$clienteB->nome = "Ozzy Osbourne";
-$clienteB->idade = 15;
-$clienteB->email = "ozzy@email.com";
+$clienteB->setNome("Ozzy Osbourne");
+$clienteB->setIdade(15);
+$clienteB->setEmail("ozzy@email.com");
 ?>
 
 <h2>Acessando/lendo os dados dos objetos</h2>
