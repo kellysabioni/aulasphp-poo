@@ -27,20 +27,21 @@ $clienteB->setEmail("ozzy@email.com");
 
 <h2>Acessando/lendo os dados dos objetos</h2>
 
-<h3>Cliente A</h3>
 <div>
     
 </div>
 
 <ul>
-    <li><b>Idade:</b> <?=$clienteA->idade?> </li>
-    <li><b>E-mail:</b> <?=$clienteA->email?> </li>
+    <li><b>Nome:</b> <?=$clienteA->getNome()?> </li>
+    <li><b>Idade:</b> <?=$clienteA->getIdade()?> </li>
+    <li><b>E-mail:</b> <?=$clienteA->getEmail()?> </li>
 </ul>
 
 
 <ul>
-    <li><b>Idade:</b> <?=$clienteB->idade?> </li>
-    <li><b>E-mail:</b> <?=$clienteB->email?> </li>
+    <li><b>Nome:</b> <?=$clienteB->getNome()?> </li>
+    <li><b>Idade:</b> <?=$clienteB->getIdade()?> </li>
+    <li><b>E-mail:</b> <?=$clienteB->getEmail()?> </li>
 </ul>
 
 
