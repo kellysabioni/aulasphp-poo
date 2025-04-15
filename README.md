@@ -1,5 +1,10 @@
 # Exemplos de programação orientada a objetos usando PHP
 
+## 04_heranca-e-enumeracao
+- Superclasse e subclasse
+- Readequação de propriedades
+- Ajustes nas chamadas de construtor, usando `parent` para acessar construtor da superclasse
+
 ## 03_encapsulamento-e-metodo-construtor
 
 - Implementação do método construtor obrigando a inicialização do objeto com dados provenientes de parâmetros
