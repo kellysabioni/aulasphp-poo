@@ -10,7 +10,11 @@
     <hr>
 
 <?php
-require_once "src/Cliente.php";
+require_once "src/Cliente.php"; // Super Classe
+require_once "src/PessoaFisica.php"; // Sub Classe
+
+$clientePF = new PessoaFisica("Kelly", "kelly.sabioni@gmail.com", 15, "222.222.222-22");
+
 ?>
 
 <h2>Acessando/lendo os dados dos objetos</h2>
@@ -21,7 +25,7 @@ require_once "src/Cliente.php";
 <h2>Testes de acesso aos recursos 
 da classe através do objeto</h2>
 
-<pre><?=var_dump($clienteA, $clienteB)?></pre>
+<pre><?=var_dump($clientePF)?></pre>
 
 
 </body>

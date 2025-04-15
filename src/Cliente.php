@@ -5,26 +5,24 @@ class Cliente
     private string $email;
 
     // Método Construtor (sempre é executado automaticamente ao criar objeto)
-    public function __construct(string $nome,int $idade,string $email)
+    public function __construct(string $nome,string $email)
     {
         $this->setNome($nome);
         $this->setEmail($email);
     }
 
-    public function setNome(string $nome):void
+    private function setNome(string $nome):void
     {
         $this->nome = $nome;
     }
    
-    public function setEmail(string $email):void
+    private function setEmail(string $email):void
     {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new InvalidArgumentException("E-mail inválido!");
         }
-
         $this->email = $email;
     }
-
 
     public function getNome():string
     {
