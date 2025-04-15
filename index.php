@@ -12,17 +12,9 @@
 <?php
 require_once "src/Cliente.php";
 
-$clienteA = new Cliente();
-$clienteB = new Cliente();
+$clienteA = new Cliente("Fulano", 30, "fulano@gmail.com");
+$clienteB = new Cliente("Ozzy", 15, "ozzy@gmail.com");
 
-// Iserindo valores através dos setters
-$clienteA->setNome("Fulano da Silva");
-$clienteA->setIdade(30);
-$clienteA->setEmail("fulano@gmail.com");
-
-$clienteB->setNome("Ozzy Osbourne");
-$clienteB->setIdade(15);
-$clienteB->setEmail("ozzy@email.com");
 ?>
 
 <h2>Acessando/lendo os dados dos objetos</h2>
@@ -32,6 +24,7 @@ $clienteB->setEmail("ozzy@email.com");
     <li><b>Nome:</b> <?=$clienteA->getNome()?> </li>
     <li><b>Idade:</b> <?=$clienteA->getIdade()?> </li>
     <li><b>E-mail:</b> <?=$clienteA->getEmail()?> </li>
+    <li><b>Faixa Etária:</b> <?=$clienteA->verificarIdade()?> </li>
 </ul>
 
 
@@ -39,6 +32,7 @@ $clienteB->setEmail("ozzy@email.com");
     <li><b>Nome:</b> <?=$clienteB->getNome()?> </li>
     <li><b>Idade:</b> <?=$clienteB->getIdade()?> </li>
     <li><b>E-mail:</b> <?=$clienteB->getEmail()?> </li>
+    <li><b>Faixa Etária:</b> <?=$clienteB->verificarIdade()?> </li>
 </ul>
 
 
