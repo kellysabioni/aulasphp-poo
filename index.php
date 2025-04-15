@@ -27,9 +27,6 @@ $clienteB->setEmail("ozzy@email.com");
 
 <h2>Acessando/lendo os dados dos objetos</h2>
 
-<div>
-    
-</div>
 
 <ul>
     <li><b>Nome:</b> <?=$clienteA->getNome()?> </li>
