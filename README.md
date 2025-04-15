@@ -1,5 +1,11 @@
 # Exemplos de programação orientada a objetos usando PHP
 
+## 03_encapsulamento-e-metodo-construtor
+
+- Implementação do método construtor obrigando a inicialização do objeto com dados provenientes de parâmetros
+- Chamada dos setters a partir do construtor
+- Mudança de visibilidade dos setters para privado
+
 ## 02_encapsulamento-para-visibilidade
 
 - Utilização de diferentes visibilidades (private e public)
