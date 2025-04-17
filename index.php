@@ -10,6 +10,7 @@
     <hr>
 
 <?php
+require_once "src/Situacao.php"; // Enumeração
 require_once "src/Cliente.php"; // Super Classe
 require_once "src/PessoaFisica.php"; // Sub Classe
 
