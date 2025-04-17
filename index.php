@@ -28,9 +28,7 @@ $clientePJ = new PessoaJuridica("João Pedro", "jp@gmail.com", "12.123.123/0001-
 <h2>Testes de acesso aos recursos 
 da classe através do objeto</h2>
 
-<pre><?=var_dump($clientePF)?></pre>
-<pre><?=var_dump($clientePJ)?></pre>
-
+<pre><?=var_dump($clientePF, $clientePJ)?></pre>
 
 </body>
 </html>

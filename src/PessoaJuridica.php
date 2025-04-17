@@ -11,6 +11,9 @@ class PessoaJuridica extends Cliente
         $this->setCNPJ($cnpj);
         $this->setAnoFundacao($anoFundacao);
         $this->setNomeFantasia($nomeFantasia);
+
+        /* Como o método foi definido na superclasse como protected, agora é possível usá-lo para mudar a situaçãode PJ  */
+        $this->setSituacao(Situacao::PENDENTE);
     }
 
     private function setCNPJ(string $cnpj): void
