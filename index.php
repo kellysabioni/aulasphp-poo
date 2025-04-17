@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 04</title>
+    <title>Exemplo 05</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 04</h1>
+    <h1>PHP com POO - Exemplo 05</h1>
     <hr>
 
 <?php
@@ -20,15 +20,13 @@ $clientePJ = new PessoaJuridica("João Pedro", "jp@gmail.com", "12.123.123/0001-
 
 ?>
 
-<h2>Acessando/lendo os dados dos objetos</h2>
+<h2>Relatórios</h2>
 
+<h3>PF</h3>
+<?=$clientePF->relatorio() ?>
 
-
-
-<h2>Testes de acesso aos recursos 
-da classe através do objeto</h2>
-
-<pre><?=var_dump($clientePF, $clientePJ)?></pre>
+<h3>PJ</h3>
+<?=$clientePJ->relatorio() ?>
 
 </body>
 </html>
