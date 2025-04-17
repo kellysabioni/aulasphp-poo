@@ -20,7 +20,7 @@ class PessoaFisica extends Cliente
         return "idoso";
     }
 
-    private function setIdade(string $idade):void
+    private function setIdade(int $idade):void
     {
         if ($idade < 0 ) {
             throw new InvalidArgumentException("Idade não pode ser menor que 0");
