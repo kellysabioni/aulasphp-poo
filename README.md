@@ -3,6 +3,7 @@
 ## 05_polimorfismo
 
 - Métodos de mesma assinatura (nome, parâmetros, retorno) mas com comportamentos diferentes
+- [Herança] Indicação de classes abstrata e final
 
 ## 04_heranca-e-enumeracao
 - Superclasse e subclasse
