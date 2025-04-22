@@ -1,5 +1,9 @@
 # Exemplos de programação orientada a objetos usando PHP
 
+## 05_polimorfismo
+
+- Métodos de mesma assinatura (nome, parâmetros, retorno) mas com comportamentos diferentes
+
 ## 04_heranca-e-enumeracao
 - Superclasse e subclasse
 - Readequação de propriedades
