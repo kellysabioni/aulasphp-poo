@@ -18,6 +18,17 @@ require_once "src/Models/PessoaJuridica.php"; // Sub Classe
 $clientePF = new PessoaFisica("Kelly", "kelly.sabioni@gmail.com", 15, "222.222.222-22"); 
 $clientePJ = new PessoaJuridica("João Pedro", "jp@gmail.com", "12.123.123/0001-45", 2019, "Corporação Tabajara"); 
 
+/* Código abaixo dará erro, pois Cliente é uma classe abstrata, 
+portanto, não podemos criar objeto a partir dela. */
+// $clienteGenerico = new Cliente("Fulano", "fulano@gmail.com");
+// var_dump($clienteGenerico);
+
+/* O código abaixo dará erro, pois não é possível
+definir/usar uma subclasse que extenda PessoaJuridica (que é uma classe final) */
+//require_once "src/Models/MEI.php";
+//$clienteMEI = new MEI("AAA", "a@a.com", "123", 2025, "aaaaAA");
+//var_dump($clienteMEI);
+
 ?>
 
 <h2>Relatórios</h2>
