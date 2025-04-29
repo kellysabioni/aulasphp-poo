@@ -1,2 +1,4 @@
-<?php // Prestadores
+<?php 
+namespace Prestadores;
+
 class Pagamento{}
