@@ -7,52 +7,61 @@ abstract class Cliente
     private string $email;
     private Situacao $situacao;
 
-    /* Definindo a situação INATIVO como valor padrão para o parâmetro situacao no construtor */
-    public function __construct(string $nome,string $email, Situacao $situacao = Situacao::INATIVO)
+    /* Definindo a situação INATIVO como valor padrão 
+    para o parâmetro situacao no construtor. */
+    public function __construct(
+        string $nome, string $email, Situacao $situacao = Situacao::INATIVO
+        )
     {
         $this->setNome($nome);
         $this->setEmail($email);
         $this->setSituacao($situacao);
     }
 
-    public function relatorio():string{
+    public function relatorio():string {
         return "<div>
-                    <h4>".$this->getNome()."</h4> 
-                    <p><b>Contato: </b> {$this->getEmail()} </p>
-                </div>";
-        }
+            <h4> {$this->getNome()} </h4>
+            <p> <b>Contato:</b> {$this->getEmail()}</p>
+        </div>";
+    }
 
-    /* Visibilidade protegida: Desta forma este método pode ser usado em SUPERCLASSES e também nas SUBCLASSES. O acesso externo continua bloqueado  */
-    protected function setSituacao(Situacao $situacao):void
-    {
+    /* Visibilidade protegida: desta forma, este método
+    pode ser usado aqui em Cliente (superclasse) e também nas subclasses.
+    O acesso externo (no nosso caso, em index) continua sendo bloqueado. */
+    protected function setSituacao(Situacao $situacao):void {
         $this->situacao = $situacao;
     }
 
-    public function getSituacao(): Situacao
-    {
+    public function getSituacao():Situacao { 
         return $this->situacao;
     }
-    
-    private function setNome(string $nome):void
+
+
+
+    private function setNome(string $nome): void 
     {
         $this->nome = $nome;
     }
-   
-    private function setEmail(string $email):void
+
+
+    private function setEmail(string $email): void 
     {
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if( !filter_var($email, FILTER_VALIDATE_EMAIL) ){
             throw new InvalidArgumentException("E-mail inválido!");
         }
+
         $this->email = $email;
     }
 
-    public function getNome():string
+    public function getNome(): string 
     {
         return $this->nome;
     }
 
-    public function getEmail():string
+
+    public function getEmail(): string 
     {
         return $this->email;
     }
+    
 }

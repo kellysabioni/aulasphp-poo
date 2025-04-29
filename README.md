@@ -4,14 +4,18 @@
 
 - Métodos de mesma assinatura (nome, parâmetros, retorno) mas com comportamentos diferentes
 - [Herança] Indicação de classes abstrata e final
+- [Enumeração] Uso da propriedade `name` para acesso as opções do `Enum`
 
-## 04_heranca-e-enumeracao
+
+## 04_heranca-e-enumeracoes
+
 - Superclasse e subclasse
 - Readequação de propriedades
 - Ajustes nas chamadas de construtor, usando `parent` para acessar construtor da superclasse
-- Uso de enumeração para criar um tipo de dado com valores customizados 
+- Uso de enumeração para criar um tipo de dado com valores customizados
 - Alteração de visibilidade para protected em um método da superclasse, permitindo assim o acesso a partir da subclasse
-- Organização das pastas e arquivos em `SRC`
+- Organização das pastas e arquivos em `src`
+
 
 ## 03_encapsulamento-e-metodo-construtor
 
@@ -19,12 +23,14 @@
 - Chamada dos setters a partir do construtor
 - Mudança de visibilidade dos setters para privado
 
+
 ## 02_encapsulamento-para-visibilidade
 
 - Utilização de diferentes visibilidades (private e public)
-- Controle da forma como acessados (getters) e modificados (setters)
+- Controle da forma como os dados são acessados (getters) e modificados (setters)
 - Com esta abordagem, podemos esconder detalhes de implementação da classe
-- Podemos atribuir diferentes lógicas de negócio (validações, sanitizações, etc)
+- Podemos atribuir diferentes lógicas de negócio (validações, sanitizações etc)
+
 
 ## 01_abstracao-usando-classes-atributos-metodos
 
