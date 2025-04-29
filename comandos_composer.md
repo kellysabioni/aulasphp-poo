@@ -4,6 +4,5 @@ Verifica se o composer foi reconhecido
 
 - composer -v 
 
-
-Instala o composer 
+Gera arquivo composer para autoload
 - composer dumpautoload
