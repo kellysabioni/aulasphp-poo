@@ -1,6 +1,11 @@
 <?php
-
 namespace MeuProjeto\Models;
+
+// Usamos o 'use' para indicar a utilização de outras classes/enums que temos
+use MeuProjeto\Enums\Situacao;
+
+// Usamos o 'use' também para indicar a utilização de classes internas do PHP
+use InvalidArgumentException;
 
 abstract class Cliente
 {

@@ -1,6 +1,7 @@
 <?php
-
 namespace MeuProjeto\Models;
+
+use MeuProjeto\Enums\Situacao;
 
 final class PessoaJuridica extends Cliente
 {
