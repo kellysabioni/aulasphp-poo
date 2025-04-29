@@ -1,5 +1,23 @@
 # Exemplos de programação orientada a objetos usando PHP
 
+## 06_namespaces
+
+- Reorganização virtual/lógica usando namespaces (espaços nomeados)
+- Evitar conflitos de nomes de classes 
+- Uso do `use` para simplificar (atalho) o acesso aos recursos do namespace
+
+>**Exemplo Sem `use`**
+```php
+$objeto = new NomeDoNameSpace\NomeDaPasta\NomeDaClasse();
+```
+
+>**Exemplo Com `use`**
+```php
+use NomeDoNameSpace\NomeDaPasta;
+$objeto = new NomeDaClasse();
+```
+
+
 ## 05_polimorfismo
 
 - Métodos de mesma assinatura (nome, parâmetros, retorno) mas com comportamentos diferentes
